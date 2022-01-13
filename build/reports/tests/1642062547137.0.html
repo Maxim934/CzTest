@@ -1,0 +1,720 @@
+<html><head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width">
+        <base href="">
+
+<!--	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">-->
+<!--        --><!--        -->	<!--        -->
+    <link rel="stylesheet" href="/core/css/bootstrap.css">
+        <link rel="stylesheet" href="/core/css/main.css?v=1775bf1b12e46f4e5c32353dadf2f2bd0498927a">
+    <link rel="stylesheet" href="/core/css/media.css?v=1775bf1b12e46f4e5c32353dadf2f2bd0498927a">
+
+	<link rel="stylesheet" href="/core/css/font-awesome-4.1.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/core/css/fixes.css?v=1775bf1b12e46f4e5c32353dadf2f2bd0498927a">
+    <link rel="stylesheet" href="/core/css/default.css?v=1775bf1b12e46f4e5c32353dadf2f2bd0498927a">
+    <link rel="stylesheet" href="/core/css/back.css?v=1775bf1b12e46f4e5c32353dadf2f2bd0498927a">
+
+    <script src="/core/js/jquery.js"></script>
+    <script src="/core/js/jquery.ui.1.11.2.js"></script>
+	<script src="/core/js/jquery.mobile.custom.min.js"></script>
+	<script src="/core/css/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/core/js/default.js?v=1775bf1b12e46f4e5c32353dadf2f2bd0498927a"></script>
+	<script src="/core/js/back.js?v=1775bf1b12e46f4e5c32353dadf2f2bd0498927a"></script>
+        <meta name="robots" content="noindex, nofollow">
+
+	
+	<link rel="stylesheet" type="text/css" href="/assets/f3ab26cc/gridview/styles.css">
+<link rel="stylesheet" type="text/css" href="">
+<link rel="stylesheet" type="text/css" href="/assets/fc03fef5/daterangepicker-bs3.css">
+<link rel="stylesheet" type="text/css" href="/assets/871ee471/skin-lion/ui.fancytree.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/70c17bdd/toastr.css">
+<script type="text/javascript" src="/assets/48ae47f0/jquery.ba-bbq.js"></script>
+<script type="text/javascript" src="/assets/48ae47f0/jquery.history.js"></script>
+<script type="text/javascript" src="/assets/fc03fef5/moment.min.js"></script>
+<script type="text/javascript" src="/assets/fc03fef5/daterangepicker.js"></script>
+<script type="text/javascript" src="/assets/871ee471/jquery.fancytree-all.min.js"></script>
+<script type="text/javascript" src="/assets/70c17bdd/toastr.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+;(function($){var ieVer=navigator.userAgent.match(/MSIE (\d+\.\d+);/);ieVer=ieVer&&ieVer[1]?new Number(ieVer):null;var cont=ieVer&&ieVer<7.1?document.createElement("div"):null,excludePattern=null,includePattern=null,mergeIfXhr=0,resMap2Request=function(url){if (!url.match(/\?/))url += "?";return url + "&nlsc_map=" + $.nlsc.smap();};;if(!$.nlsc)$.nlsc={resMap:{}};$.nlsc.normUrl=function(url){if(!url)return null;if(cont){cont.innerHTML='<a href="'+url+'"></a>';url=cont.firstChild.href}if(excludePattern&& url.match(excludePattern))return null;if(includePattern&&!url.match(includePattern))return null;return url.replace(/\?*&*(_=\d+)?&*$/g,"")};$.nlsc.h=function(s){var h=0,i;for(i=0;i<s.length;i++)h=(h<<5)-h+s.charCodeAt(i)&1073741823;return""+h};$.nlsc.fetchMap=function(){for(var url,i=0,res=$(document).find("script[src]");i<res.length;i++)if(url=this.normUrl(res[i].src?res[i].src:res[i].href))this.resMap[url]={h:$.nlsc.h(url),d:1}};$.nlsc.smap=function(){var s="[";for(var url in this.resMap)s+='"'+this.resMap[url].h+ '",';return s.replace(/,$/,"")+"]"};var c={global:true,beforeSend:function(xhr,opt){if(!$.nlsc.fetched){$.nlsc.fetched=1;$.nlsc.fetchMap()}if(opt.dataType!="script"){if(mergeIfXhr)opt.url=resMap2Request(opt.url);return true}var url=$.nlsc.normUrl(opt.url);if(!url)return true;if(opt.converters&&opt.converters["text script"]){var saveConv=opt.converters["text script"];opt.converters["text script"]=function(){if(!$.nlsc.resMap[url].d){$.nlsc.resMap[url].d=1;saveConv.apply(window,arguments)}}}var r=$.nlsc.resMap[url]; if(r){if(r.d)return false}else $.nlsc.resMap[url]={h:$.nlsc.h(url),d:0};return true}};if(ieVer)c.dataFilter=function(data,type){if(type&&(type!="html"&&type!="text"))return data;return data.replace(/(<script[^>]+)defer(=[^\s>]*)?/ig,"$1")};$.ajaxSetup(c)})(jQuery);
+/*]]>*/
+</script>
+<title>Dashboard - Player management</title>
+        
+</head>
+<body class="body__en modal-open">
+	<section class="top-header" id="header">
+	<header class="clearfix"><a class="toggle-min" href=""></a>
+
+		<a href="" class="toggle-min"><i class="fa fa-bars"></i></a>
+
+		<div class="logo">
+			<a href="/admin/login"><img id="header-logo" src="/front/img/casino/logo.png" alt="Casino"></a>		</div>
+
+<!--		<a href="" class="toggle-min"><i class="fa fa-bars"></i></a>-->
+		<div class="menu-button toggle-min">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</div>
+
+		<div class="top-nav">
+			<ul class="nav-left list-unstyled">
+
+				<li class="dropdown">
+					
+					
+				</li>
+				
+				<li class="dropdown">
+					
+					
+				</li>
+
+                <li class="dropdown">
+                    
+                    
+                </li>
+
+                				<li id="deposit" class="dropdown hidden">
+                                        <a href="/payment/paymentSystemTransaction/depositRequests"><i class="fa fa-fw fa-money"></i> <span class="badge badge-warning">0</span></a>				</li>
+
+                				<li id="withdraw" class="dropdown hidden">
+                                        <a href="/payment/paymentSystemTransaction/withdrawalRequests"><i class="fa fa-usd"></i> <span class="badge badge-warning">0</span></a>				</li>
+			</ul>
+
+			
+			<ul class="nav-right pull-right list-unstyled">
+				<li class="dropdown langs text-normal">
+					<a type="button" id="clock" role="button" class="dropdown-toggle" data-toggle="dropdown" href="#">8:29</a>
+
+<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+
+    	<li>
+            <a tabindex="-1" href="#" id="yt0">(UTC -11) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt1">(UTC -10) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt2">(UTC -9) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt3">(UTC -8) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt4">(UTC -7) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt5">(UTC -6) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt6">(UTC -5) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt7">(UTC -4) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt8">(UTC -3) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt9">(UTC -2) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt10">(UTC -1) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt11">(UTC +0)  <i class="fa fa-check"></i></a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt12">(UTC +1) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt13">(UTC +2) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt14">(UTC +3) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt15">(UTC +4) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt16">(UTC +5) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt17">(UTC +6) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt18">(UTC +7) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt19">(UTC +8) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt20">(UTC +9) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt21">(UTC +10) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt22">(UTC +11) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt23">(UTC +12) </a>	</li>
+    </ul>
+
+				</li>
+				<li class="dropdown langs text-normal">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="/user/player/admin"><i class="fa fa-flag"></i> English</a>
+
+<ul class="dropdown-menu with-arrow pull-right list-langs">
+	
+			<li>
+                                <a class="" href="/ru/user/player/admin">Русский</a>                        </li>
+
+	</ul>
+
+				</li>
+				<li class="dropdown text-normal nav-profile">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="white-space: nowrap;">
+						<i class="fa fa-user"></i>
+						<span>
+							admin1						</span>
+
+					</a>
+					<ul class="dropdown-menu with-arrow pull-right">
+						<li>
+							<a href="/operator/changeYourPassword"><i class="fa fa-unlock"></i> Change password</a>						</li>
+						<li class="divider"></li>
+						<li>
+							<a href="/user/logout"><i class="fa fa-sign-out"></i> Logout</a>						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+</section>
+
+<script>
+	$(function(){
+		setInterval(function() {
+			newRequests();
+		}, 1000*20);
+
+		newRequests();
+	});
+    
+    function newRequests() {
+        time = localStorage.getItem('time') || new Date().getTime() / 1000 - 20;
+        
+        $.ajax({
+            url:'/payment/paymentSystemTransaction/countPendingRequest',
+            data: {time:time},
+            dataType: 'JSON',
+            success: function(data) {
+
+                localStorage.setItem('time', new Date().getTime() / 1000);
+                
+                deposit = $('#deposit');
+                withdraw = $('#withdraw');
+
+                if (data.new > 0 && true) {
+					elAudioPlayer = $("#audio-player")[0];
+					elAudioPlayer.play();
+					setTimeout(function(){
+						elAudioPlayer.pause();
+						elAudioPlayer.currentTime = 0;
+					}, 2000);
+                }
+
+                if (data.deposit > 0) {
+                    $('.badge', deposit).text(data.deposit);
+                    deposit.removeClass('hidden');
+                } else {
+                    deposit.addClass('hidden');
+                }
+
+                if (data.withdraw > 0) {
+                    $('.badge', withdraw).text(data.withdraw);
+                    $('.dash-withdraw').text(data.withdraw);
+                    withdraw.removeClass('hidden');
+                } else {
+                    withdraw.addClass('hidden');
+                }
+            },
+        });
+    }
+</script>
+
+<audio loop="" id="audio-player" name="audio-player">
+    <source src="/core/sound/ding-ding-dong.mp3" type="audio/mpeg">
+    <source src="/core/sound/ding-ding-dong.ogg" type="audio/ogg">
+    <source src="/core/sound/ding-ding-dong.wav" type="audio/wav">
+</audio>
+
+	
+<aside id="nav-container">
+    <div id="nav-wrapper">
+        <div class="slimScrollDiv" style="position: relative; overflow: auto; width: auto; height: 100%;">
+            <ul class="main-side-menu" id="nav">
+<li><a style="white-space: nowrap;" href="/configurator/dashboard/index"><i class="fa fa-dashboard"><span class="icon-bg bg-primary"></span></i> <span>Dashboard</span></a></li>
+<li><a data-target="#s-menu-halls" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-file-text-o"><span class="icon-bg bg-primary"></span></i> <span>Agent Info</span></a>
+<ul class="collapse" id="s-menu-halls">
+<li><a href="/structure/default/details?nodeId=1"><i class="fa fa-caret-right"></i>General</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#s-menu-main" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-cubes"><span class="icon-bg bg-orange"></span></i> <span>Settings</span></a>
+<ul class="collapse" id="s-menu-main">
+<li><a href="/configurator/theme/index"><i class="fa fa-caret-right"></i>General</a></li>
+<li><a href="/settings/default/index"><i class="fa fa-caret-right"></i>Settings</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#s-menu-games" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-gamepad"><span class="icon-bg bg-info"></span></i> <span>Games</span></a>
+<ul class="collapse" id="s-menu-games">
+<li data-node-required="1"><a href="/games/gameContractLimit/index"><i class="fa fa-caret-right"></i>Game contract limits</a></li>
+<li data-node-required="1"><a href="/structure/default/gameLimitMovements"><i class="fa fa-caret-right"></i>Game contract limit movements</a></li>
+<li data-node-required="1"><a href="/games/operator/gameSessions"><i class="fa fa-caret-right"></i>Game sessions</a></li>
+<li data-node-required="1"><a href="/games/operator/games"><i class="fa fa-caret-right"></i>List of games</a></li>
+<li data-node-required="1"><a href="/gameGroupAdmin/admin"><i class="fa fa-caret-right"></i>Game groups</a></li>
+<li data-node-required="1"><a href="/structure/nodeGameProvider/admin"><i class="fa fa-caret-right"></i>Game providers</a></li>
+<li><a href="/games/tables/admin">Admin game tables list</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#s-menu-money" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-money"><span class="icon-bg bg-orange"></span></i> <span>Money</span></a>
+<ul class="collapse" id="s-menu-money">
+<li><a href="/structure/nodeCurrency/admin"><i class="fa fa-caret-right"></i>Currency</a></li>
+<li><a href="/structure/nodeCurrency/dailyPaymentTotals"><i class="fa fa-caret-right"></i>Automatic payouts limits</a></li>
+<li data-node-required="1"><a href="/payment/paymentSystemTransaction/depositRequests"><i class="fa fa-caret-right"></i>Deposit requests</a></li>
+<li data-node-required="1"><a href="/payment/paymentSystemTransaction/withdrawalRequests"><i class="fa fa-caret-right"></i>Withdrawal requests</a></li>
+<li data-node-required="1"><a href="/payment/paymentSystemTransaction/index"><i class="fa fa-caret-right"></i>Payment transactions</a></li>
+<li data-node-required="1"><a href="/payment/paymentSystemTransactionUnconfirmed/admin"><i class="fa fa-caret-right"></i>Unconfirmed transactions</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#s-menu-content" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-file-word-o"><span class="icon-bg bg-success"></span></i> <span>Content</span></a>
+<ul class="collapse" id="s-menu-content">
+<li><a href="/InfoPages/admin/tree?place=playerTopMenu"><i class="fa fa-caret-right"></i>Player top menu</a></li>
+<li><a href="/InfoPages/admin/tree?place=topMenu"><i class="fa fa-caret-right"></i>Top menu</a></li>
+<li><a href="/InfoPages/admin/tree?place=bottomMenu"><i class="fa fa-caret-right"></i>Bottom menu</a></li>
+<li><a href="/InfoPages/admin/tree?place=articles"><i class="fa fa-caret-right"></i>Articles</a></li>
+<li><a href="/news/admin/admin"><i class="fa fa-caret-right"></i>News</a></li>
+<li><a href="/slider/sliderPlace/admin"><i class="fa fa-caret-right"></i>Sliders</a></li>
+<li><a href="/InfoPages/tabs/admin"><i class="fa fa-caret-right"></i>Tabs</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#s-menu-seo" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-globe"><span class="icon-bg bg-primary"></span></i> <span>SEO</span></a>
+<ul class="collapse" id="s-menu-seo">
+<li><a href="/seo/seoGlobalTag/admin"><i class="fa fa-caret-right"></i>SEO global tags</a></li>
+<li><a href="/seo/seoTagByUrl/admin"><i class="fa fa-caret-right"></i>SEO tags by URL</a></li>
+<li><a href="/seo/robots/index"><i class="fa fa-caret-right"></i> robots.txt</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li class="active"><a data-target="#s-menu-users" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-user"><span class="icon-bg bg-success"></span></i> <span>Users</span></a>
+<ul class="collapse in" id="s-menu-users">
+<li data-node-required="1" class="active"><a href="/user/player/admin"><i class="fa fa-caret-right"></i>Players</a></li>
+<li data-node-required="1"><a href="/user/report/playerRegistrations"><i class="fa fa-caret-right"></i>Players registrations</a></li>
+<li data-node-required="1"><a href="/user/admin/admin"><i class="fa fa-caret-right"></i>Users</a></li>
+<li><a href="/user/device/admin"><i class="fa fa-caret-right"></i>Devices</a></li>
+<li><a href="/user/admin/blockedUsers"><i class="fa fa-caret-right"></i>Blocked players</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#s-menu-operator-bonus" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-gift"><span class="icon-bg bg-twitter"></span></i> <span>Bonuses</span></a>
+<ul class="collapse" id="s-menu-operator-bonus">
+<li><a href="/bonus/operator/admin"><i class="fa fa-caret-right"></i>List of bonuses</a></li>
+<li data-node-required="1"><a href="/bonus/operator/playerBonuses"><i class="fa fa-caret-right"></i>Bonus transactions</a></li>
+<li><a href="/bonus/operator/gameWageringByApi"><i class="fa fa-caret-right"></i>Wagering by provider</a></li>
+<li><a href="/bonus/operator/gameWagering"><i class="fa fa-caret-right"></i>Wagering by game type</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#module-jackpots" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-dot-circle-o"><span class="icon-bg bg-primary"></span></i><span>Jackpots</span></a>
+<ul id="module-jackpots" class="collapse">
+<li><a href="/jackpots/jackpots/admin"><i class="fa fa-caret-right"></i>Jackpots</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#module-messaging" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-comment-o"><span class="icon-bg bg-primary"></span></i><span>Messaging</span></a>
+<ul id="module-messaging" class="collapse">
+<li><a href="/messaging/template/admin"><i class="fa fa-caret-right"></i>Templates</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#module-faq" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-question"><span class="icon-bg bg-success"></span></i><span>FAQ</span></a>
+<ul class="collapse" id="module-faq">
+<li><a href="/faq/category/admin"><i class="fa fa-caret-right"></i>Categories</a></li>
+<li><a href="/faq/item/admin"><i class="fa fa-caret-right"></i>Questions</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#module-shop" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-shopping-cart"><span class="icon-bg bg-info"></span></i><span>Shop</span></a>
+<ul class="collapse" id="module-shop">
+<li><a href="/shop/product/admin"><i class="fa fa-caret-right"></i>Products</a></li>
+<li><a href="/shop/order/admin"><i class="fa fa-caret-right"></i>Orders</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#s-menu-logs" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-list-ul"><span class="icon-bg bg-orange"></span></i> <span>Logs</span></a>
+<ul class="collapse" id="s-menu-logs">
+<li data-node-required="1"><a href="/structure/default/limitMovements"><i class="fa fa-caret-right"></i>Deposit limit movements</a></li>
+<li data-node-required="1"><a href="/user/cashier/cashierTransactions"><i class="fa fa-caret-right"></i>Cashier transactions</a></li>
+<li data-node-required="1"><a href="/user/cashier/shiftLog"><i class="fa fa-caret-right"></i>Shift work</a></li>
+<li data-node-required="1"><a href="/userMessage/ticketAdmin/admin"><i class="fa fa-caret-right"></i>Tickets</a></li>
+<li data-node-required="1"><a href="/user/userVisitLog/admin"><i class="fa fa-caret-right"></i>Visit log</a></li>
+<li data-node-required="1"><a href="/statistics/log/admin"><i class="fa fa-caret-right"></i>Losses log</a></li>
+<li><a href="/statistics/jackpotLog/admin"><i class="fa fa-caret-right"></i>Jackpot log</a></li>
+<li><a href="/games/notGivenWins/admin"><i class="fa fa-caret-right"></i>Not given wins log</a></li>
+<li><a href="/bonus/wagerResetLog/admin"><i class="fa fa-caret-right"></i>Wager reset log</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#s-menu-reports" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-bar-chart-o"><span class="icon-bg bg-orange"></span></i> <span>Reports</span></a>
+<ul class="collapse" id="s-menu-reports">
+<li data-node-required="1"><a href="/statistics/report/cashflow"><i class="fa fa-caret-right"></i>Cashflow</a></li>
+<li data-node-required="1"><a href="/statistics/report/games"><i class="fa fa-caret-right"></i>Provider revenue</a></li>
+<li data-node-required="1"><a href="/statistics/report/creditConsumption"><i class="fa fa-caret-right"></i>Credit consumption</a></li>
+<li data-node-required="1"><a href="/statistics/report/creditConsumptionAdvanced"><i class="fa fa-caret-right"></i>Credit consumption (advanced)</a></li>
+<li data-node-required="1"><a href="/statistics/report/periodics"><i class="fa fa-caret-right"></i>Periodics</a></li>
+<li data-node-required="1"><a href="/statistics/report/yieldByPlayer"><i class="fa fa-caret-right"></i>Yield by player</a></li>
+<li data-node-required="1"><a href="/statistics/report/limitMovements"><i class="fa fa-caret-right"></i>Deposit limits</a></li>
+<li data-node-required="1"><a href="/statistics/report/bonus"><i class="fa fa-caret-right"></i>Bonus report</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+</ul>                    </div>
+
+    </div>
+</aside>
+	
+	<section id="content">
+		
+						
+		
+							<ul class="breadcrumb" id="node-breadcrumbs">
+					<li class="active fancytree-breadcrumbs" data-node-id="1"><span class="fancytree-ico-cf"><span class="fancytree-icon"></span></span>Root</li>				</ul>
+
+				<div id="node-tree-container" style="display: none">
+					<input class="form-control" id="tree-search" placeholder="Search by name or #ID. Press ESC to close." type="text">
+					<div id="node-tree">
+						<ul class="ui-fancytree-source ui-helper-hidden"><li id="id1" data-node-type="0" data-node-status="1" class="folder" data-node-binded="1" data-jstree="{&quot;icon&quot;:&quot;fa fa-globe&quot;}"><a href="/structure/default/details?nodeId=1">[#1] Root</a><ul><li id="id2" data-node-type="1" data-node-status="1" class="" data-node-binded="0" data-jstree="{&quot;icon&quot;:&quot;fa fa-file-o&quot;}"><a href="/structure/default/details?nodeId=2">[#2] <b>Hall</b> <i class="fa fa-check"></i></a></li></ul></li></ul>					<ul class="ui-fancytree fancytree-container" tabindex="0"><li class="fancytree-lastsib"><span class="fancytree-node fancytree-folder fancytree-has-children fancytree-lastsib fancytree-exp-cl fancytree-ico-cf"><span class="fancytree-expander"></span><span class="fancytree-icon"></span><span class="fancytree-title">[#1] Root</span></span></li></ul></div>
+				</div>
+			
+		
+		<ol class="breadcrumb-alt">
+<li><a href="/configurator/dashboard/index">Dashboard</a></li><li><a href="">Player management</a></li></ol>
+		<div class="page">
+			
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<strong>
+			<i class="fa fa-th"></i> Player management		</strong>
+	</div>
+	<div class="panel-body">
+        <div class="row">
+            <div class="col-md-12">
+                <a class="btn btn-info" href="/user/player/create"><i class="fa fa-plus"></i> Create player</a>
+                <div class="pull pull-right">
+                    <a class="btn btn-warning export" data-target="#myModal" data-toggle="modal" href="/user/player/export"><i class="fa fa-fw fa-download"></i> Export CSV</a>
+                                        
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <div id="payment-system-transaction-grid" class="grid-view">
+<table class="table table-hover table-striped table-bordered table-condensed">
+<thead>
+<tr>
+<th class="hide-mobile" id="payment-system-transaction-grid_c0">#</th><th id="payment-system-transaction-grid_c1"><a class="sort-link asc" href="/user/player/admin?PlayerSearch_sort=login.desc&amp;ajax=payment-system-transaction-grid">Username</a></th><th class="hide-mobile" id="payment-system-transaction-grid_c2"><a class="sort-link" href="/user/player/admin?PlayerSearch_sort=unique_alias&amp;ajax=payment-system-transaction-grid">External ID</a></th><th id="payment-system-transaction-grid_c3"><a class="sort-link" href="/user/player/admin?PlayerSearch_sort=name&amp;ajax=payment-system-transaction-grid">Name</a></th><th class="hide-mobile" id="payment-system-transaction-grid_c4"><a class="sort-link" href="/user/player/admin?PlayerSearch_sort=surname&amp;ajax=payment-system-transaction-grid">Last name</a></th><th class="hide-mobile" id="payment-system-transaction-grid_c5"><a class="sort-link" href="/user/player/admin?PlayerSearch_sort=email&amp;ajax=payment-system-transaction-grid">E-mail</a></th><th class="hide-mobile" id="payment-system-transaction-grid_c6"><a class="sort-link" href="/user/player/admin?PlayerSearch_sort=phone_number&amp;ajax=payment-system-transaction-grid">Phone</a></th><th id="payment-system-transaction-grid_c7"><a class="sort-link" href="/user/player/admin?PlayerSearch_sort=hall&amp;ajax=payment-system-transaction-grid">Hall</a></th><th id="payment-system-transaction-grid_c8">Balance</th><th class="hide-mobile" id="payment-system-transaction-grid_c9"><a class="sort-link" href="/user/player/admin?PlayerSearch_sort=registration_time&amp;ajax=payment-system-transaction-grid">Registration date</a></th><th class="hide-mobile" id="payment-system-transaction-grid_c10"><a class="sort-link" href="/user/player/admin?PlayerSearch_sort=last_visit&amp;ajax=payment-system-transaction-grid">Last visit</a></th><th class="hide-mobile" id="payment-system-transaction-grid_c11">Last visit IP</th><th class="hide-mobile" id="payment-system-transaction-grid_c12"><a class="sort-link" href="/user/player/admin?PlayerSearch_sort=is_verified&amp;ajax=payment-system-transaction-grid">Verified player</a></th><th id="payment-system-transaction-grid_c13">Online</th><th class="hide-mobile" id="payment-system-transaction-grid_c14"><a class="sort-link" href="/user/player/admin?PlayerSearch_sort=status&amp;ajax=payment-system-transaction-grid">Status</a></th><th class="checkbox-column" id="selectedIds"><input type="checkbox" value="1" name="selectedIds_all" id="selectedIds_all"></th><th id="payment-system-transaction-grid_c17"><select onchange="$.fn.yiiGridView.update('payment-system-transaction-grid',{ data:{pageSizePlayers: $(this).val() }})" style="width:55px; float:right" name="pageSizePlayers" id="pageSizePlayers">
+<option value="20" selected="selected">20</option>
+<option value="50">50</option>
+<option value="100">100</option>
+<option value="200">200</option>
+<option value="500">500</option>
+</select></th></tr>
+<tr class="filters">
+<td class="hide-mobile">&nbsp;</td><td><input name="PlayerSearch[login]" type="text"></td><td class="hide-mobile"><input name="PlayerSearch[unique_alias]" type="text"></td><td><input name="PlayerSearch[name]" type="text"></td><td class="hide-mobile"><input name="PlayerSearch[surname]" type="text"></td><td class="hide-mobile"><input name="PlayerSearch[email]" type="text"></td><td class="hide-mobile"><input name="PlayerSearch[phone_number]" type="text"></td><td><select name="PlayerSearch[hall]">
+<option value=""></option>
+<option value="2">[#2] Hall</option>
+</select></td><td>&nbsp;</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile"><input name="PlayerSearch[last_visit]" type="text"></td><td class="hide-mobile"><input name="PlayerSearch[last_visit_ip]" type="text"></td><td class="hide-mobile"><select name="PlayerSearch[is_verified]">
+<option value=""></option>
+<option value="0">No</option>
+<option value="1">Yes</option>
+</select></td><td><select name="PlayerSearch[is_online]">
+<option value=""></option>
+<option value="1">Yes</option>
+<option value="0">No</option>
+</select></td><td class="hide-mobile"><select name="PlayerSearch[status]">
+<option value=""></option>
+<option value="0">Not active</option>
+<option value="1">Active</option>
+<option value="-1">Banned</option>
+<option value="2">Banned (auto)</option>
+</select></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td width="25" class="centered hide-mobile">1</td><td><a href="/user/player/details?id=7115">00111niki1323sv412378962</a></td><td class="hide-mobile">7885606ead41de5ed</td><td>Niki</td><td class="hide-mobile">Doe</td><td class="hide-mobile">00111niki223ava56323214368657@example.com</td><td class="hide-mobile">&nbsp;</td><td>[#2] Hall</td><td>No accounts</td><td class="hide-mobile">2021-04-08 09:14:09</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile">&nbsp;</td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-default">No</span></td><td class="text-center"><span class="badge badge-warning">No</span></td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-success">Active</span></td><td class="checkbox-column"><input value="7115" id="selectedIds_0" type="checkbox" name="selectedIds[]"></td><td style="width:10px;vertical-align:middle;" class="centered nowrap"><a class="btn btn-primary btn-xs" title="Details" href="/user/player/details?id=7115"><i class="fa fa-eye"></i></a><a class="btn btn-success btn-xs" style="margin-left:5px;" title="Messages" href="/messaging/message/admin?player_id=7115"><i class="fa fa-envelope"></i></a></td></tr>
+<tr class="even">
+<td width="25" class="centered hide-mobile">2</td><td><a href="/user/player/details?id=7116">002111niki1323sv412378962</a></td><td class="hide-mobile">6561606eae4231d6f</td><td>Niki</td><td class="hide-mobile">Doe</td><td class="hide-mobile">001121niki223ava56323214368657@example.com</td><td class="hide-mobile">&nbsp;</td><td>[#2] Hall</td><td>No accounts</td><td class="hide-mobile">2021-04-08 09:18:26</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile">&nbsp;</td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-default">No</span></td><td class="text-center"><span class="badge badge-warning">No</span></td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-success">Active</span></td><td class="checkbox-column"><input value="7116" id="selectedIds_1" type="checkbox" name="selectedIds[]"></td><td style="width:10px;vertical-align:middle;" class="centered nowrap"><a class="btn btn-primary btn-xs" title="Details" href="/user/player/details?id=7116"><i class="fa fa-eye"></i></a><a class="btn btn-success btn-xs" style="margin-left:5px;" title="Messages" href="/messaging/message/admin?player_id=7116"><i class="fa fa-envelope"></i></a></td></tr>
+<tr class="odd">
+<td width="25" class="centered hide-mobile">3</td><td><a href="/user/player/details?id=7117">0021131niki1323sv412378962</a></td><td class="hide-mobile">5488606eae6b1c297</td><td>Niki</td><td class="hide-mobile">Doe</td><td class="hide-mobile">001121nik3i223ava56323214368657@example.com</td><td class="hide-mobile">&nbsp;</td><td>[#2] Hall</td><td>No accounts</td><td class="hide-mobile">2021-04-08 09:19:07</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile">&nbsp;</td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-default">No</span></td><td class="text-center"><span class="badge badge-warning">No</span></td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-success">Active</span></td><td class="checkbox-column"><input value="7117" id="selectedIds_2" type="checkbox" name="selectedIds[]"></td><td style="width:10px;vertical-align:middle;" class="centered nowrap"><a class="btn btn-primary btn-xs" title="Details" href="/user/player/details?id=7117"><i class="fa fa-eye"></i></a><a class="btn btn-success btn-xs" style="margin-left:5px;" title="Messages" href="/messaging/message/admin?player_id=7117"><i class="fa fa-envelope"></i></a></td></tr>
+<tr class="even">
+<td width="25" class="centered hide-mobile">4</td><td><a href="/user/player/details?id=7120">003sv38962</a></td><td class="hide-mobile">6199606eaf72642a8</td><td>Niki</td><td class="hide-mobile">Doe</td><td class="hide-mobile">001i238868657@example.com</td><td class="hide-mobile">&nbsp;</td><td>[#2] Hall</td><td>No accounts</td><td class="hide-mobile">2021-04-08 09:23:30</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile">&nbsp;</td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-default">No</span></td><td class="text-center"><span class="badge badge-warning">No</span></td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-success">Active</span></td><td class="checkbox-column"><input value="7120" id="selectedIds_3" type="checkbox" name="selectedIds[]"></td><td style="width:10px;vertical-align:middle;" class="centered nowrap"><a class="btn btn-primary btn-xs" title="Details" href="/user/player/details?id=7120"><i class="fa fa-eye"></i></a><a class="btn btn-success btn-xs" style="margin-left:5px;" title="Messages" href="/messaging/message/admin?player_id=7120"><i class="fa fa-envelope"></i></a></td></tr>
+<tr class="odd">
+<td width="25" class="centered hide-mobile">5</td><td><a href="/user/player/details?id=7119">003sv4123738962</a></td><td class="hide-mobile">2286606eaef07c013</td><td>Niki</td><td class="hide-mobile">Doe</td><td class="hide-mobile">001121nik3i238868657@example.com</td><td class="hide-mobile">&nbsp;</td><td>[#2] Hall</td><td>No accounts</td><td class="hide-mobile">2021-04-08 09:21:20</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile">&nbsp;</td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-default">No</span></td><td class="text-center"><span class="badge badge-warning">No</span></td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-success">Active</span></td><td class="checkbox-column"><input value="7119" id="selectedIds_4" type="checkbox" name="selectedIds[]"></td><td style="width:10px;vertical-align:middle;" class="centered nowrap"><a class="btn btn-primary btn-xs" title="Details" href="/user/player/details?id=7119"><i class="fa fa-eye"></i></a><a class="btn btn-success btn-xs" style="margin-left:5px;" title="Messages" href="/messaging/message/admin?player_id=7119"><i class="fa fa-envelope"></i></a></td></tr>
+<tr class="even">
+<td width="25" class="centered hide-mobile">6</td><td><a href="/user/player/details?id=7118">003sv412378962</a></td><td class="hide-mobile">2167606eaec67e0c7</td><td>Niki</td><td class="hide-mobile">Doe</td><td class="hide-mobile">001121nik3i28868657@example.com</td><td class="hide-mobile">&nbsp;</td><td>[#2] Hall</td><td>No accounts</td><td class="hide-mobile">2021-04-08 09:20:38</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile">&nbsp;</td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-default">No</span></td><td class="text-center"><span class="badge badge-warning">No</span></td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-success">Active</span></td><td class="checkbox-column"><input value="7118" id="selectedIds_5" type="checkbox" name="selectedIds[]"></td><td style="width:10px;vertical-align:middle;" class="centered nowrap"><a class="btn btn-primary btn-xs" title="Details" href="/user/player/details?id=7118"><i class="fa fa-eye"></i></a><a class="btn btn-success btn-xs" style="margin-left:5px;" title="Messages" href="/messaging/message/admin?player_id=7118"><i class="fa fa-envelope"></i></a></td></tr>
+<tr class="odd">
+<td width="25" class="centered hide-mobile">7</td><td><a href="/user/player/details?id=7211">00412acc</a></td><td class="hide-mobile">6804606f4f8269645</td><td>TestUsername</td><td class="hide-mobile">TestSurname</td><td class="hide-mobile">00412acc@example.com</td><td class="hide-mobile">&nbsp;</td><td>[#2] Hall</td><td>No accounts</td><td class="hide-mobile">2021-04-08 20:46:26</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile">&nbsp;</td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-default">No</span></td><td class="text-center"><span class="badge badge-warning">No</span></td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-success">Active</span></td><td class="checkbox-column"><input value="7211" id="selectedIds_6" type="checkbox" name="selectedIds[]"></td><td style="width:10px;vertical-align:middle;" class="centered nowrap"><a class="btn btn-primary btn-xs" title="Details" href="/user/player/details?id=7211"><i class="fa fa-eye"></i></a><a class="btn btn-success btn-xs" style="margin-left:5px;" title="Messages" href="/messaging/message/admin?player_id=7211"><i class="fa fa-envelope"></i></a></td></tr>
+<tr class="even">
+<td width="25" class="centered hide-mobile">8</td><td><a href="/user/player/details?id=7512">0056b3b7</a></td><td class="hide-mobile">680260702d3a39a7e</td><td>TestUsername</td><td class="hide-mobile">TestSurname</td><td class="hide-mobile">0056b3b7@example.com</td><td class="hide-mobile">&nbsp;</td><td>[#2] Hall</td><td>0.00 RUB</td><td class="hide-mobile">2021-04-09 12:32:26</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile">&nbsp;</td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-default">No</span></td><td class="text-center"><span class="badge badge-warning">No</span></td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-success">Active</span></td><td class="checkbox-column"><input value="7512" id="selectedIds_7" type="checkbox" name="selectedIds[]"></td><td style="width:10px;vertical-align:middle;" class="centered nowrap"><a class="btn btn-primary btn-xs" title="Details" href="/user/player/details?id=7512"><i class="fa fa-eye"></i></a><a class="btn btn-success btn-xs" style="margin-left:5px;" title="Messages" href="/messaging/message/admin?player_id=7512"><i class="fa fa-envelope"></i></a></td></tr>
+<tr class="odd">
+<td width="25" class="centered hide-mobile">9</td><td><a href="/user/player/details?id=6174">00930ce7-7f22-44bb-a1ee-25c399a54e6a</a></td><td class="hide-mobile">78525eb953bd20970</td><td>Test</td><td class="hide-mobile">User</td><td class="hide-mobile">00930ce7-7f22-44bb-a1ee-25c399a54e6a@example.com</td><td class="hide-mobile">&nbsp;</td><td>[#2] Hall</td><td>No accounts</td><td class="hide-mobile">2020-05-11 15:31:41</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile">&nbsp;</td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-default">No</span></td><td class="text-center"><span class="badge badge-warning">No</span></td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-success">Active</span></td><td class="checkbox-column"><input value="6174" id="selectedIds_8" type="checkbox" name="selectedIds[]"></td><td style="width:10px;vertical-align:middle;" class="centered nowrap"><a class="btn btn-primary btn-xs" title="Details" href="/user/player/details?id=6174"><i class="fa fa-eye"></i></a><a class="btn btn-success btn-xs" style="margin-left:5px;" title="Messages" href="/messaging/message/admin?player_id=6174"><i class="fa fa-envelope"></i></a></td></tr>
+<tr class="even">
+<td width="25" class="centered hide-mobile">10</td><td><a href="/user/player/details?id=7847">00ac63fe-11a1-41f0-ae6a-955f40aaac4f</a></td><td class="hide-mobile">694560b3efcd0b713</td><td>Eleni</td><td class="hide-mobile">Williamson</td><td class="hide-mobile">00ac63fe-11a1-41f0-ae6a-955f40aaac4f@example.com</td><td class="hide-mobile">&nbsp;</td><td>[#2] Hall</td><td>0.00 RUB</td><td class="hide-mobile">2021-05-30 22:04:29</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile">&nbsp;</td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-default">No</span></td><td class="text-center"><span class="badge badge-warning">No</span></td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-success">Active</span></td><td class="checkbox-column"><input value="7847" id="selectedIds_9" type="checkbox" name="selectedIds[]"></td><td style="width:10px;vertical-align:middle;" class="centered nowrap"><a class="btn btn-primary btn-xs" title="Details" href="/user/player/details?id=7847"><i class="fa fa-eye"></i></a><a class="btn btn-success btn-xs" style="margin-left:5px;" title="Messages" href="/messaging/message/admin?player_id=7847"><i class="fa fa-envelope"></i></a></td></tr>
+<tr class="odd">
+<td width="25" class="centered hide-mobile">11</td><td><a href="/user/player/details?id=7121">00v5538962</a></td><td class="hide-mobile">8774606eb0af3a527</td><td>Niki</td><td class="hide-mobile">Doe</td><td class="hide-mobile">0015i2388657@example.com</td><td class="hide-mobile">&nbsp;</td><td>[#2] Hall</td><td>No accounts</td><td class="hide-mobile">2021-04-08 09:28:47</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile">&nbsp;</td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-default">No</span></td><td class="text-center"><span class="badge badge-warning">No</span></td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-success">Active</span></td><td class="checkbox-column"><input value="7121" id="selectedIds_10" type="checkbox" name="selectedIds[]"></td><td style="width:10px;vertical-align:middle;" class="centered nowrap"><a class="btn btn-primary btn-xs" title="Details" href="/user/player/details?id=7121"><i class="fa fa-eye"></i></a><a class="btn btn-success btn-xs" style="margin-left:5px;" title="Messages" href="/messaging/message/admin?player_id=7121"><i class="fa fa-envelope"></i></a></td></tr>
+<tr class="even">
+<td width="25" class="centered hide-mobile">12</td><td><a href="/user/player/details?id=7123">00v5rr538962</a></td><td class="hide-mobile">9005606eb5619b6ae</td><td>Niki</td><td class="hide-mobile">Doe</td><td class="hide-mobile">0015irr2388657@example.com</td><td class="hide-mobile">&nbsp;</td><td>[#2] Hall</td><td>No accounts</td><td class="hide-mobile">2021-04-08 09:48:49</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile">&nbsp;</td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-default">No</span></td><td class="text-center"><span class="badge badge-warning">No</span></td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-success">Active</span></td><td class="checkbox-column"><input value="7123" id="selectedIds_11" type="checkbox" name="selectedIds[]"></td><td style="width:10px;vertical-align:middle;" class="centered nowrap"><a class="btn btn-primary btn-xs" title="Details" href="/user/player/details?id=7123"><i class="fa fa-eye"></i></a><a class="btn btn-success btn-xs" style="margin-left:5px;" title="Messages" href="/messaging/message/admin?player_id=7123"><i class="fa fa-envelope"></i></a></td></tr>
+<tr class="odd">
+<td width="25" class="centered hide-mobile">13</td><td><a href="/user/player/details?id=7538">010ad2af</a></td><td class="hide-mobile">149960703101b5240</td><td>TestUsername</td><td class="hide-mobile">TestSurname</td><td class="hide-mobile">010ad2af@example.com</td><td class="hide-mobile">&nbsp;</td><td>[#2] Hall</td><td>0.00 RUB</td><td class="hide-mobile">2021-04-09 12:48:33</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile">&nbsp;</td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-default">No</span></td><td class="text-center"><span class="badge badge-warning">No</span></td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-success">Active</span></td><td class="checkbox-column"><input value="7538" id="selectedIds_12" type="checkbox" name="selectedIds[]"></td><td style="width:10px;vertical-align:middle;" class="centered nowrap"><a class="btn btn-primary btn-xs" title="Details" href="/user/player/details?id=7538"><i class="fa fa-eye"></i></a><a class="btn btn-success btn-xs" style="margin-left:5px;" title="Messages" href="/messaging/message/admin?player_id=7538"><i class="fa fa-envelope"></i></a></td></tr>
+<tr class="even">
+<td width="25" class="centered hide-mobile">14</td><td><a href="/user/player/details?id=7114">0111niki1323sv412378962</a></td><td class="hide-mobile">1312606eace999d96</td><td>Niki</td><td class="hide-mobile">Doe</td><td class="hide-mobile">0111niki223ava56323214368657@example.com</td><td class="hide-mobile">&nbsp;</td><td>[#2] Hall</td><td>No accounts</td><td class="hide-mobile">2021-04-08 09:12:41</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile">&nbsp;</td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-default">No</span></td><td class="text-center"><span class="badge badge-warning">No</span></td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-success">Active</span></td><td class="checkbox-column"><input value="7114" id="selectedIds_13" type="checkbox" name="selectedIds[]"></td><td style="width:10px;vertical-align:middle;" class="centered nowrap"><a class="btn btn-primary btn-xs" title="Details" href="/user/player/details?id=7114"><i class="fa fa-eye"></i></a><a class="btn btn-success btn-xs" style="margin-left:5px;" title="Messages" href="/messaging/message/admin?player_id=7114"><i class="fa fa-envelope"></i></a></td></tr>
+<tr class="odd">
+<td width="25" class="centered hide-mobile">15</td><td><a href="/user/player/details?id=6143">01e3f0e8-cc5f-425e-aefe-3aac1a2bab61</a></td><td class="hide-mobile">8435eb92c4522125</td><td>Test</td><td class="hide-mobile">User</td><td class="hide-mobile">01e3f0e8-cc5f-425e-aefe-3aac1a2bab61@example.com</td><td class="hide-mobile">&nbsp;</td><td>[#2] Hall</td><td>No accounts</td><td class="hide-mobile">2020-05-11 12:43:17</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile">&nbsp;</td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-default">No</span></td><td class="text-center"><span class="badge badge-warning">No</span></td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-success">Active</span></td><td class="checkbox-column"><input value="6143" id="selectedIds_14" type="checkbox" name="selectedIds[]"></td><td style="width:10px;vertical-align:middle;" class="centered nowrap"><a class="btn btn-primary btn-xs" title="Details" href="/user/player/details?id=6143"><i class="fa fa-eye"></i></a><a class="btn btn-success btn-xs" style="margin-left:5px;" title="Messages" href="/messaging/message/admin?player_id=6143"><i class="fa fa-envelope"></i></a></td></tr>
+<tr class="even">
+<td width="25" class="centered hide-mobile">16</td><td><a href="/user/player/details?id=6121">023e2928-9004-43b3-9dc0-eee3065812c9</a></td><td class="hide-mobile">95825eb91ee5e0f17</td><td>Test</td><td class="hide-mobile">User</td><td class="hide-mobile">023e2928-9004-43b3-9dc0-eee3065812c9@example.com</td><td class="hide-mobile">&nbsp;</td><td>[#2] Hall</td><td>No accounts</td><td class="hide-mobile">2020-05-11 11:46:13</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile">&nbsp;</td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-default">No</span></td><td class="text-center"><span class="badge badge-warning">No</span></td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-success">Active</span></td><td class="checkbox-column"><input value="6121" id="selectedIds_15" type="checkbox" name="selectedIds[]"></td><td style="width:10px;vertical-align:middle;" class="centered nowrap"><a class="btn btn-primary btn-xs" title="Details" href="/user/player/details?id=6121"><i class="fa fa-eye"></i></a><a class="btn btn-success btn-xs" style="margin-left:5px;" title="Messages" href="/messaging/message/admin?player_id=6121"><i class="fa fa-envelope"></i></a></td></tr>
+<tr class="odd">
+<td width="25" class="centered hide-mobile">17</td><td><a href="/user/player/details?id=7777">02e1a95e-3b8f-4dd8-831c-3d81b0a3c960</a></td><td class="hide-mobile">717660b3e47f410cd</td><td>Tana</td><td class="hide-mobile">Gibson</td><td class="hide-mobile">02e1a95e-3b8f-4dd8-831c-3d81b0a3c960@example.com</td><td class="hide-mobile">&nbsp;</td><td>[#2] Hall</td><td>0.00 RUB</td><td class="hide-mobile">2021-05-30 21:16:15</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile">&nbsp;</td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-default">No</span></td><td class="text-center"><span class="badge badge-warning">No</span></td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-success">Active</span></td><td class="checkbox-column"><input value="7777" id="selectedIds_16" type="checkbox" name="selectedIds[]"></td><td style="width:10px;vertical-align:middle;" class="centered nowrap"><a class="btn btn-primary btn-xs" title="Details" href="/user/player/details?id=7777"><i class="fa fa-eye"></i></a><a class="btn btn-success btn-xs" style="margin-left:5px;" title="Messages" href="/messaging/message/admin?player_id=7777"><i class="fa fa-envelope"></i></a></td></tr>
+<tr class="even">
+<td width="25" class="centered hide-mobile">18</td><td><a href="/user/player/details?id=6273">02eb70e5-4a21-49d9-97cd-7819934741e2</a></td><td class="hide-mobile">65615ec18840aa306</td><td>Test</td><td class="hide-mobile">User</td><td class="hide-mobile">02eb70e5-4a21-49d9-97cd-7819934741e2@example.com</td><td class="hide-mobile">&nbsp;</td><td>[#2] Hall</td><td>No accounts</td><td class="hide-mobile">2020-05-17 20:53:52</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile">&nbsp;</td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-default">No</span></td><td class="text-center"><span class="badge badge-warning">No</span></td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-success">Active</span></td><td class="checkbox-column"><input value="6273" id="selectedIds_17" type="checkbox" name="selectedIds[]"></td><td style="width:10px;vertical-align:middle;" class="centered nowrap"><a class="btn btn-primary btn-xs" title="Details" href="/user/player/details?id=6273"><i class="fa fa-eye"></i></a><a class="btn btn-success btn-xs" style="margin-left:5px;" title="Messages" href="/messaging/message/admin?player_id=6273"><i class="fa fa-envelope"></i></a></td></tr>
+<tr class="odd">
+<td width="25" class="centered hide-mobile">19</td><td><a href="/user/player/details?id=7446">036a0798</a></td><td class="hide-mobile">731560700fa9c4ba0</td><td>TestUsername</td><td class="hide-mobile">TestSurname</td><td class="hide-mobile">036a0798@example.com</td><td class="hide-mobile">&nbsp;</td><td>[#2] Hall</td><td>No accounts</td><td class="hide-mobile">2021-04-09 10:26:17</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile">&nbsp;</td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-default">No</span></td><td class="text-center"><span class="badge badge-warning">No</span></td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-success">Active</span></td><td class="checkbox-column"><input value="7446" id="selectedIds_18" type="checkbox" name="selectedIds[]"></td><td style="width:10px;vertical-align:middle;" class="centered nowrap"><a class="btn btn-primary btn-xs" title="Details" href="/user/player/details?id=7446"><i class="fa fa-eye"></i></a><a class="btn btn-success btn-xs" style="margin-left:5px;" title="Messages" href="/messaging/message/admin?player_id=7446"><i class="fa fa-envelope"></i></a></td></tr>
+<tr class="even">
+<td width="25" class="centered hide-mobile">20</td><td><a href="/user/player/details?id=7450">03a76640</a></td><td class="hide-mobile">8713607010327b297</td><td>TestUsername</td><td class="hide-mobile">TestSurname</td><td class="hide-mobile">03a76640@example.com</td><td class="hide-mobile">&nbsp;</td><td>[#2] Hall</td><td>No accounts</td><td class="hide-mobile">2021-04-09 10:28:34</td><td class="hide-mobile">&nbsp;</td><td class="hide-mobile">&nbsp;</td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-default">No</span></td><td class="text-center"><span class="badge badge-warning">No</span></td><td style="width: 100px" class="text-center hide-mobile"><span class="badge badge-success">Active</span></td><td class="checkbox-column"><input value="7450" id="selectedIds_19" type="checkbox" name="selectedIds[]"></td><td style="width:10px;vertical-align:middle;" class="centered nowrap"><a class="btn btn-primary btn-xs" title="Details" href="/user/player/details?id=7450"><i class="fa fa-eye"></i></a><a class="btn btn-success btn-xs" style="margin-left:5px;" title="Messages" href="/messaging/message/admin?player_id=7450"><i class="fa fa-envelope"></i></a></td></tr>
+</tbody>
+</table> <span class="pull-left"><div class="pager"><ul class="pagination pagination-sm" id="yw0"><li class="first hidden"><a href="/user/player/admin?PlayerSearch_sort=login&amp;ajax=payment-system-transaction-grid">&lt;&lt; First</a></li>
+<li class="previous hidden"><a href="/user/player/admin?PlayerSearch_sort=login&amp;ajax=payment-system-transaction-grid">&lt; Previous</a></li>
+<li class=" active"><a href="/user/player/admin?PlayerSearch_sort=login&amp;ajax=payment-system-transaction-grid">1</a></li>
+<li class=""><a href="/user/player/admin?PlayerSearch_sort=login&amp;ajax=payment-system-transaction-grid&amp;PlayerSearch_page=2">2</a></li>
+<li class=""><a href="/user/player/admin?PlayerSearch_sort=login&amp;ajax=payment-system-transaction-grid&amp;PlayerSearch_page=3">3</a></li>
+<li class=""><a href="/user/player/admin?PlayerSearch_sort=login&amp;ajax=payment-system-transaction-grid&amp;PlayerSearch_page=4">4</a></li>
+<li class=""><a href="/user/player/admin?PlayerSearch_sort=login&amp;ajax=payment-system-transaction-grid&amp;PlayerSearch_page=5">5</a></li>
+<li class=""><a href="/user/player/admin?PlayerSearch_sort=login&amp;ajax=payment-system-transaction-grid&amp;PlayerSearch_page=6">6</a></li>
+<li class=""><a href="/user/player/admin?PlayerSearch_sort=login&amp;ajax=payment-system-transaction-grid&amp;PlayerSearch_page=7">7</a></li>
+<li class=""><a href="/user/player/admin?PlayerSearch_sort=login&amp;ajax=payment-system-transaction-grid&amp;PlayerSearch_page=8">8</a></li>
+<li class=""><a href="/user/player/admin?PlayerSearch_sort=login&amp;ajax=payment-system-transaction-grid&amp;PlayerSearch_page=9">9</a></li>
+<li class=""><a href="/user/player/admin?PlayerSearch_sort=login&amp;ajax=payment-system-transaction-grid&amp;PlayerSearch_page=10">10</a></li>
+<li class="next"><a href="/user/player/admin?PlayerSearch_sort=login&amp;ajax=payment-system-transaction-grid&amp;PlayerSearch_page=2">Next &gt;</a></li>
+<li class="last"><a href="/user/player/admin?PlayerSearch_sort=login&amp;ajax=payment-system-transaction-grid&amp;PlayerSearch_page=454">Last &gt;&gt;</a></li></ul></div></span> <span class="pull-right"><div class="summary">Displaying 1-20 of 9071 results.</div></span> <span class="clearfix"></span><div class="keys" style="display:none" title="/user/player/admin?PlayerSearch_sort=login&amp;ajax=payment-system-transaction-grid"><span>7115</span><span>7116</span><span>7117</span><span>7120</span><span>7119</span><span>7118</span><span>7211</span><span>7512</span><span>6174</span><span>7847</span><span>7121</span><span>7123</span><span>7538</span><span>7114</span><span>6143</span><span>6121</span><span>7777</span><span>6273</span><span>7446</span><span>7450</span></div>
+</div>
+            </div>
+        </div>
+	</div>
+</div>
+<input type="hidden" id="exportIds">
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".export").on('click',function () {
+            $('#countObjects').val($('#pageSizePlayers').val());
+            $('#idOfPlayers').val($('#exportIds').val());
+        });
+        $(".page").on('change',"input[name='selectedIds\[\]']",function () {
+            if(!this.checked) {
+                var str = $('#exportIds').val();
+                str = str.replace($(this).val()+',',"");
+                $('#exportIds').val(str);
+            }else{
+                $('#exportIds').val($(this).val() + ',' + $('#exportIds').val());
+            }
+        });
+        $(".page").on('change', '#selectedIds_all',function () {
+            if(!$(this).is(':checked'))
+            {
+                $('#exportIds').val('');
+                return true;
+            }
+            $.each($("input[name='selectedIds\[\]']"), function (i, l) {
+                var str = $('#exportIds').val();
+                str = str.replace(','+$(l).val() + ',', ",");
+                str = str.replace(',,', "");
+                if (!l.checked) {
+                    $('#exportIds').val(str);
+                } else {
+                    $('#exportIds').val($(l).val() + ',' +str);
+                }
+            });
+        });
+    });
+
+</script>
+<div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: block;">
+  <div class="modal-dialog" role="document" style="width:300px;">
+    <div class="modal-content"><form id="csv_form" action="/user/player/export" method="POST">
+<input type="hidden" value="c93069227e2a2328c5067d818b5d2efa17211448" name="YII_CSRF_TOKEN"><div class="modal-header">
+    <h4 class="modal-title" style="display: inline;"><b>Export data</b></h4>
+    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+</div>
+<div class="modal-body">
+    <span id="columns"><input value="username" id="columns_0" checked="checked" type="checkbox" name="columns[]"> <label for="columns_0">Username</label><br><input value="name" id="columns_1" checked="checked" type="checkbox" name="columns[]"> <label for="columns_1">First name</label><br><input value="surname" id="columns_2" checked="checked" type="checkbox" name="columns[]"> <label for="columns_2">Last name</label><br><input value="email" id="columns_3" checked="checked" type="checkbox" name="columns[]"> <label for="columns_3">E-mail</label><br><input value="phone_number" id="columns_4" checked="checked" type="checkbox" name="columns[]"> <label for="columns_4">Phone</label><br><input value="node_id" id="columns_5" checked="checked" type="checkbox" name="columns[]"> <label for="columns_5">Hall</label><br><input value="create_at" id="columns_6" checked="checked" type="checkbox" name="columns[]"> <label for="columns_6">Registration date</label><br><input value="lastvisit_at" id="columns_7" checked="checked" type="checkbox" name="columns[]"> <label for="columns_7">Last visit</label><br><input value="registration_ip" id="columns_8" checked="checked" type="checkbox" name="columns[]"> <label for="columns_8">Registration IP</label></span>    <br>
+    <span class="message error hide">Choose data for export</span>
+</div>
+<div class="modal-footer">
+    <input name="submit" class="btn btn-primary" type="submit" value="Export">    <input type="hidden" value="20" name="countObjects" id="countObjects">
+    <input type="hidden" name="ids" id="idOfPlayers" value="">
+    <button data-dismiss="modal" class="btn btn-default" type="button">Close</button>
+</div>
+</form>
+<style>
+    label {
+        font-weight: normal;
+    }
+</style>
+
+</div>
+  </div>
+</div>
+
+<script>
+	$(".panel-body").on('click','.ajaxKick',function(e){
+		e.preventDefault();
+		if(confirm('Are you sure?'))
+		{
+			$.get('http://test-app.d6.dev.devcaz.com/user/player/kickAllPlayers')
+				.success(function (res) {
+					res = JSON.parse(res);
+					if(res.type=="success")
+					{
+						toastr["success"]("", res.message)
+					}
+					else
+					{
+						toastr["error"]("", res.message)
+					}
+				});
+		}
+	});
+</script>		</div>
+	</section>
+
+	
+
+<script type="text/javascript" src="/assets/f3ab26cc/gridview/jquery.yiigridview.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery(document).on('click','#selectedIds_all',function() {
+	var checked=this.checked;
+	jQuery("input[name='selectedIds\[\]']:enabled").each(function() {this.checked=checked;});
+});
+jQuery(document).on('click', "input[name='selectedIds\[\]']", function() {
+	jQuery('#selectedIds_all').prop('checked', jQuery("input[name='selectedIds\[\]']").length==jQuery("input[name='selectedIds\[\]']:checked").length);
+});
+jQuery('#payment-system-transaction-grid').yiiGridView({'ajaxUpdate':['payment-system-transaction-grid'],'ajaxVar':'ajax','pagerClass':'pager','loadingClass':'grid-view-loading','filterClass':'filters','tableClass':'table table-hover table-striped table-bordered table-condensed','selectableRows':1,'enableHistory':true,'updateSelector':'{page}, {sort}','filterSelector':'{filter}','pageVar':'PlayerSearch_page'});
+
+                        $(document).ready(function() {
+                                $(document).on('mouseup', 'input[name="PlayerSearch[last_visit]"]', function(){
+                                        $(this).daterangepicker({"opens":"left","startDayOfWeek":1,"format":"YYYY-MM-DD H:mm","timePicker":true,"timePicker12Hour":false,"timePickerIncrement":5,"locale":{"fromLabel":"From","toLabel":"To","applyLabel":"Accept","cancelLabel":"Cancel","customRangeLabel":"Custom date","daysOfWeek":"","monthNames":"","firstDay":0},"ranges":{"Today":["2022-01-13","2022-01-14"],"Yesterday":["2022-01-12","2022-01-13"],"7 days":["2022-01-06","2022-01-14"],"Previous week":["2022-01-03","2022-01-10"],"Current week":["2022-01-10","2022-01-17"],"30 days":["2021-12-13","2022-01-14"],"Previous month":["2021-12-01","2022-01-01"],"Current month":["2022-01-01","2022-02-01"]}});
+                                });
+                                $(document).on('apply','input[name="PlayerSearch[last_visit]"]', function(ev, picker) {
+                                        $('input[name="PlayerSearch[last_visit]"]').trigger('change');
+                                        ;
+                                });
+                        });
+                
+jQuery('body').on('click','#yt0',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-11','cache':false});return false;});
+jQuery('body').on('click','#yt1',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-10','cache':false});return false;});
+jQuery('body').on('click','#yt2',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-9','cache':false});return false;});
+jQuery('body').on('click','#yt3',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-8','cache':false});return false;});
+jQuery('body').on('click','#yt4',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-7','cache':false});return false;});
+jQuery('body').on('click','#yt5',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-6','cache':false});return false;});
+jQuery('body').on('click','#yt6',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-5','cache':false});return false;});
+jQuery('body').on('click','#yt7',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-4','cache':false});return false;});
+jQuery('body').on('click','#yt8',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-3','cache':false});return false;});
+jQuery('body').on('click','#yt9',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-2','cache':false});return false;});
+jQuery('body').on('click','#yt10',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-1','cache':false});return false;});
+jQuery('body').on('click','#yt11',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B0','cache':false});return false;});
+jQuery('body').on('click','#yt12',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B1','cache':false});return false;});
+jQuery('body').on('click','#yt13',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B2','cache':false});return false;});
+jQuery('body').on('click','#yt14',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B3','cache':false});return false;});
+jQuery('body').on('click','#yt15',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B4','cache':false});return false;});
+jQuery('body').on('click','#yt16',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B5','cache':false});return false;});
+jQuery('body').on('click','#yt17',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B6','cache':false});return false;});
+jQuery('body').on('click','#yt18',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B7','cache':false});return false;});
+jQuery('body').on('click','#yt19',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B8','cache':false});return false;});
+jQuery('body').on('click','#yt20',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B9','cache':false});return false;});
+jQuery('body').on('click','#yt21',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B10','cache':false});return false;});
+jQuery('body').on('click','#yt22',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B11','cache':false});return false;});
+jQuery('body').on('click','#yt23',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B12','cache':false});return false;});
+
+        $(function() {
+                var phptime = new Date(2022, 01, 13, 08, 28, 59);
+
+                var h = phptime.getHours();
+                var m = phptime.getMinutes();
+                var s = phptime.getSeconds();
+
+                startTime(h,m,s);
+        });
+
+        function startTime(h,m,s)
+        {       
+                var h = h;
+                var m = m;
+                var s = s;
+                if (s > 59) {                        
+                        s = s-60; 
+                        m += 1 ; 
+                }
+                if (m > 59) {
+                        m = m-60; 
+                        h += 1 ;
+                }
+                if (h == 24) {
+                        h = 0;
+                }
+
+                m = checkTime(m);
+
+                document.getElementById('clock').innerHTML=h+':'+m;
+
+                t=setTimeout(function() { startTime( h, parseInt(m), parseInt(s) + 5) },5000);
+        }
+
+        function checkTime(i)
+        {
+                if (i<10)
+                {
+                        i='0' + i;
+                }
+                return i;
+        }
+
+toastr.options={'positionClass':'toast-top-right','fadeOut':400,'timeOut':5000,'fadeIn':400};
+});
+/*]]>*/
+</script>
+
+
+<div class="modal-backdrop fade in"></div></body></html>

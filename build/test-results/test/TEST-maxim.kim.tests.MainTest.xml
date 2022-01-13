@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="maxim.kim.tests.MainTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-13T09:37:43" hostname="DESKTOP-B2CL133" time="11.786">
+  <properties/>
+  <testcase name="auth()" classname="maxim.kim.tests.MainTest" time="11.786"/>
+  <system-out><![CDATA[[, 00111niki1323sv412378962, 002111niki1323sv412378962, 0021131niki1323sv412378962, 003sv38962, 003sv4123738962, 003sv412378962, 00412acc, 0056b3b7, 00930ce7-7f22-44bb-a1ee-25c399a54e6a, 00ac63fe-11a1-41f0-ae6a-955f40aaac4f, 00v5538962, 00v5rr538962, 010ad2af, 0111niki1323sv412378962, 01e3f0e8-cc5f-425e-aefe-3aac1a2bab61, 023e2928-9004-43b3-9dc0-eee3065812c9, 02e1a95e-3b8f-4dd8-831c-3d81b0a3c960, 02eb70e5-4a21-49d9-97cd-7819934741e2, 036a0798, 03a76640]
+[, 00111niki1323sv412378962, 002111niki1323sv412378962, 0021131niki1323sv412378962, 003sv38962, 003sv4123738962, 003sv412378962, 00412acc, 0056b3b7, 00930ce7-7f22-44bb-a1ee-25c399a54e6a, 00ac63fe-11a1-41f0-ae6a-955f40aaac4f, 00v5538962, 00v5rr538962, 010ad2af, 0111niki1323sv412378962, 01e3f0e8-cc5f-425e-aefe-3aac1a2bab61, 023e2928-9004-43b3-9dc0-eee3065812c9, 02e1a95e-3b8f-4dd8-831c-3d81b0a3c960, 02eb70e5-4a21-49d9-97cd-7819934741e2, 036a0798, 03a76640]
+true
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 37484
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+янв 13, 2022 3:37:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
